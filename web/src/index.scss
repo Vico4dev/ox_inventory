@@ -123,26 +123,35 @@ button:active {
   height: 100%;
 
   gap: 20px;
+
+}.inventory-wrapper1 {
+  display: absolute;
+  flex-direction: row;
+top: 20%;
+
 }
 
 .inventory-control {
-  display: flex;
+  display: absolute;
 
+
+  z-index: 99999;
   .inventory-control-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+    display: absolute;
+ 
+    z-index: 99999;
+
   }
 
   .inventory-control-input {
+ 
+    z-index: 99999;
     transition: 200ms;
-    padding: 16px 8px;
+  
     border-radius: 2.5%;
     font-family: $mainFont;
     font-size: 16px;
-    text-align: center;
+
     outline: none;
     border: none;
     color: #fff;
@@ -153,17 +162,18 @@ button:active {
   }
 
   .inventory-control-button {
+  
+    z-index: 99999;
     font-size: 14px;
     color: #fff;
     background-color: $secondaryColor;
     transition: 200ms;
-    padding: 12px 8px;
+ 
     border-radius: 2.5%;
-    border: none;
-    text-transform: uppercase;
+  
     font-family: $mainFont;
-    width: 100%;
-    font-weight: 500;
+    width: 50%;
+   
     &:hover {
       background-color: $secondaryColorDark;
     }
